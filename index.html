@@ -10,19 +10,39 @@
 <body class="right">
     <div id="header"><div class="limiter">
         <img src="img/unhcr_logo.png">
-	<h1>UNHCR operations between 2010 and 2012</h1>
+	<h1>Visualization of Growing Financial & Human Resources Commitment to Emergencies, 2010-2012</h1> 
     </div></div>
     <div id="content"><div class="limiter">
-        <p>Since 2011 UNHCR have had to face a conjunction of severe humanitarian emergencies.
+        <p>Since 2010 UNHCR have had to face a conjunction of severe humanitarian emergencies.
 	</p>
 	<p>This map shows how financial resources, field offices number, emergency response teams deployment and asylum seekers outflows evolved over this period of time.</p>
-	<p>Click on the buttons below to access a chronological view of the dataset:</p>
 	<!--<h2>Years:</h2>-->
         <div id="nav" class="layers">
           <a data-control="layer" href="#y2010">2010</a>
           <a data-control="layer" href="#y2011">2011</a>
           <a data-control="layer" href="#y2012">2012 (Q1)</a>
         </div>
+	<h3>Legend:</h3>
+	<table>
+		<tr>
+			<td><img class="img_legend" src="img/staff.png"></td>
+			<td>Number of Emergency Response Team staffs deployment</td>
+		</tr>
+		<tr>
+			<td><img class="img_legend" src="img/flows.png"></td>
+			<td>Number of *prima facie asylum seekers (major inflows only)</td>
+		</tr>
+		<tr>
+			<td><img class="img_legend" src="img/office.png"></td>
+			<td>UNHCR offices (sub-office, branch office, field office, ...)</td>
+		</tr>
+		<tr>
+			<td><img class="img_legend" src="img/expens.png"></td>
+			<td>Budget expenditures increase or decrease rate between 2010 and 2011 (No data for 2012)</td>
+		</tr>
+	</table>
+	</br>
+	<h3>Disclaimer:</h3>The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.
     </div></div>
     <div id="map" class="map"></div>
 
@@ -70,7 +90,7 @@
                 initial: true
             },
             y2011: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-azbw581o.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-c3ah54co.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
@@ -78,6 +98,16 @@
                  ease: 1000
                 },
                 group: 0
+	    },
+            y2012: {
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-dekq34y0.jsonp',
+                center: {
+		 lat: 0,
+                 lon: 0,
+                 zoom: 3,
+                 ease: 1000
+		},
+		group: 0
 	    }
         });
     </script>

@@ -94,6 +94,10 @@ body > div {
   left:0;
   z-index:0;
 }
+
+.img_legend{
+  padding: 0px 5px 20px 0px;
+  vertical-align:top}
 #header {
   position:absolute;
   top:0;
