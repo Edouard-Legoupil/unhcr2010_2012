@@ -40,10 +40,10 @@
 
         // Make a new map in #map
     var main = Map('map',{
-            api:'http://a.tiles.mapbox.com/v3/unhcr.dm_dhc_background.jsonp',
+            api:'http://a.tiles.mapbox.com/v3/unhcr.map-9wqj9j18.jsonp',
             center: {
-                lat: 0,
-                lon: 0,
+                lat: 23,
+                lon: 45,
                 zoom: 3
             },
             zoomRange: [3, 4],
@@ -59,7 +59,7 @@
 
         main.layers({
             y2010: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.dm_dhc_countries.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-v2bsd7hn.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
@@ -70,25 +70,15 @@
                 initial: true
             },
             y2011: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.dm_dhc_world.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-azbw581o.jsonp',
                 center: {
-                    lat: 0,
-                    lon: 0,
-                    zoom: 3,
-                    ease: 2000
+		 lat: 0,
+                 lon: 0,
+                 zoom: 3,
+                 ease: 1000
                 },
                 group: 0
-            },
-	    y2012: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.dm_dhc_world.jsonp',
-                center: {
-                    lat: 0,
-                    lon: 0,
-                    zoom: 3,
-                    ease: 2000
-                },
-                group: 0
-	    },
+	    }
         });
     </script>
 </body>

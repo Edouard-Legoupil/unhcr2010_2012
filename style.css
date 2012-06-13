@@ -22,7 +22,6 @@ time, mark, audio, video {
   font-size:100%;
   font:inherit;
   vertical-align:baseline;
-  color:rgba(255,255,255,0.9);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -63,6 +62,7 @@ code { font:normal 12px/20px monospace; }
 h1, h2, h3, h4, h5, h6 {
   font-weight:700;
   margin:1em 0;
+  color:rgba(255,255,255,0.9);
 }
 
 h1 {
@@ -141,6 +141,7 @@ body > div {
   overflow-x:hidden;
   overflow-y:auto;
   padding:20px;
+  color:rgba(255,255,255,0.9);
 }
 .layers a {
   display:inline;
