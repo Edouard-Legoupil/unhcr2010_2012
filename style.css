@@ -22,6 +22,7 @@ time, mark, audio, video {
   font-size:100%;
   font:inherit;
   vertical-align:baseline;
+  color:rgba(255,255,255,0.9);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -67,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   line-height:1.75em;
   font-size:1.5em;
+  font-color:white;
 }
 h2 {
   line-height:1.5em;
@@ -100,7 +102,8 @@ body > div {
   height:29px;
   background:rgb(255,255,255);
   background:rgba(255,255,255, 0.9);
-  border-bottom:1px solid #ccc;
+  background:rgba(33,33,33, 0.9);
+  border-bottom:1px solid #333;
   overflow:hidden;
   padding:10px 0;
   z-index:2;
@@ -130,20 +133,23 @@ body > div {
   top:50px;
   right:0;
   bottom:0;
-  width:279px;
+  width:250px;
   background:rgb(255,255,255);
   background:rgba(255,255,255, 0.9);
-  border-left:1px solid #ccc;
+  background:rgba(33,33,33, 0.9);
+  border-left:1px solid #333;
   overflow-x:hidden;
   overflow-y:auto;
   padding:20px;
 }
 .layers a {
-  display:block;
+  display:inline;
   padding:5px;
   margin:5px 0;
+  /*background:#eee;*/
   background:#eee;
-  max-width:300px;
+  max-width:60px;
+  /*max-width:300px;*/
 }
 .layers a:hover, .layers a:focus, .layers a.active {
   background:#369;
